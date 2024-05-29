@@ -1,0 +1,71 @@
+{
+    "login": "login",
+    "logout": "logout",
+    "addProducts": "Add rooms",
+    "favorite": "favorite",
+    "input_placeholder": "Please Input",
+    "login_submit": "Submit",
+    "login_remember": "Remember",
+    "login_username": "Username",
+    "login_password": "Password",
+    "change_English": "Change English language",
+    "change_Chinese": "Change traditional Chinese",
+    "input_username": "Please input username",
+    "input_password": "Please input password",
+    "NotFoundPage": "Sorry, we couldn't find this Page",
+    "backtoHome": "Back to Home Page",
+    "Card":
+    { 
+    "price": "Price",
+    "location":"Location:",
+    "month": "/Month",
+    "type": "Type:"
+    },
+    "message":{
+        "login_success": "Login success",
+        "login_error": "Login Error",
+        "logout_success": "Logout success",
+        "login_username": "Please input correct userName",
+        "login_password": "Please input correct passWord",
+        "submit_success": "Add room successfully",
+        "BuildinType_message": "Please select Building Type",
+        "location_message": "Please select location",
+        "phone_message": "Please input cellphone Number",
+        "email_message": "Please input Email",
+        "please_login": "Please login"
+     },
+     "addProduct":{
+        "addRoom": "Add Room",
+        "RoomType": "Building type",
+        "building": "building",
+        "apartment": "Apartment",
+        "villa": "Villa",
+        "house": "house",
+        "location": "location",
+        "Description": "Description",
+        "Description_placeholder": "Please input Description",
+        "price": "Price",
+        "price_placeholder": "Please input Price",
+        "email": "Contact Email",
+        "email_placeholder": "Please input E-mail",
+        "phone": "My Phone Number",
+        "phone_placeholder": "Please input phone number",
+        "submit": "Submit",
+        "selectType_placeholder": "Please select building Type",
+        "price_input": "Please input Price",
+        "email_input": "Please input Email",
+        "phone_input": "Please input cellphone number",
+        "descripiton_input": "Please input Description"
+     },
+     "details_page":{
+      "detail_type": "type:",
+      "detail_price": "Price:",
+      "detail_description": "Description:",
+      "Favorite_Button": "Save this room",
+      "detail_month": "/Month",
+      "detail_location": "Location",
+      "popup_location": "Location:",
+      "delete": "Delete"
+     }
+    
+}

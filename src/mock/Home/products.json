@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "location": "台中",
+        "image": "https://a0.muscache.com/im/pictures/f8e39957-a493-4b3c-8771-13750698d295.jpg?im_w=1200",
+        "type":  "住宅大樓",
+        "description": "房源位於台中市勤美商圈，擁有高樓層景觀以及絕佳的地理位置，24小時保全管理",
+        "detailImages": [
+        "https://a0.muscache.com/im/pictures/f8e39957-a493-4b3c-8771-13750698d295.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/5005bbc2-a121-4be4-8580-a4f046dfe69c.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-856767557181417041/original/5d0d8990-8740-4252-8214-04ffb94df6da.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/d8fe1234-7a8a-48ad-86a3-1d4aa8bd4889.jpg?im_w=720"
+        ],
+        "latitude": 24.152075,
+        "longitude": 120.663601, 
+        "price": "5000"
+
+    },
+    {
+        "id":2,
+        "location": "台北",
+        "image": "https://a0.muscache.com/im/pictures/7232c7e1-4e3a-407d-92bb-1df52a8e9df5.jpg?im_w=1200",
+        "type":  "電梯公寓",
+        "description": "全新裝潢的101無敵景觀房!距離世貿101站二號出口步行約三分鐘!捷運站出口旁就有ubike，讓您可以騎車體驗信義區一日生活圈!",
+        "detailImages": [
+            "https://a0.muscache.com/im/pictures/7232c7e1-4e3a-407d-92bb-1df52a8e9df5.jpg?im_w=1200",
+            "https://a0.muscache.com/im/pictures/110893507/57f28fcf_original.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/110893644/2bf8e538_original.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/110893299/b37ea92b_original.jpg?im_w=720"
+            ],
+        "latitude": 25.033964,
+        "longitude": 121.564468,
+        "price": "30000"
+    },
+    {
+        "id":3,
+        "location": "宜蘭",
+        "image": "https://a0.muscache.com/im/pictures/7a04b7e1-967c-43a7-83ef-975b3ed632be.jpg?im_w=1200",
+        "type": "別墅",
+        "description": "海之子-Moon擁有無敵海景第一排、遠眺龜山島，欣賞海景、觀賞日出。近車站、客運，交通機能活便利",
+        "detailImages": [
+            "https://a0.muscache.com/im/pictures/7a04b7e1-967c-43a7-83ef-975b3ed632be.jpg?im_w=1200",
+            "https://a0.muscache.com/im/pictures/67050143-556b-46ef-8ae1-e75504976676.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/3b679a77-7461-407b-b185-e6f4a546615e.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/af041827-b3b1-498f-aec9-e99133315496.jpg?im_w=720"
+            ],
+        "price": "7000",
+        "latitude": 24.859675505735463, 
+        "longitude":121.82311392958344
+
+    }
+]
