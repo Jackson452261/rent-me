@@ -1,5 +1,5 @@
 import create from 'zustand'
-import { getToken } from '../utils/localStorage'
+import { getToken } from '@/utils/localStorage'
 
 export const useUserStore = create((set) => ({
     isLogin: getToken(),

@@ -1,8 +1,12 @@
 {
     "login": "登入",
     "logout": "登出",
+    "cancel_button": "取消",
+    "search_button": "搜尋",
     "addProducts": "新增房源",
     "favorite": "收藏頁面",
+    "favorite_text": "收藏",
+    "furniture": "家具與設備",
     "input_placeholder": "請輸入",
     "login_submit": "提交",
     "login_remember": "記住我",
@@ -69,5 +73,22 @@
       "detail_month": "/月",
       "detail_location": "租屋地點",
       "popup_location": "位置:"
+     },
+     "footer":{
+      "footer_taichung": "台中",
+      "footer_Taipei": "台北",
+      "footer_Tainan": "台南",
+      "footer_kaohsiung": "高雄",
+      "footer_location": "位置",
+      "building_type": "房屋類型",
+      "elevator_building": "電梯大樓",
+      "residential_building": "公寓大樓",
+      "villa": "別墅",
+      "house": "透天厝",
+      "about_us": "關於我們",
+      "city_introduction": "城市景點",
+      "house_introduction": "房屋特色",
+      "favorite_page": "收藏頁面",
+      "news_page": "最新消息"
      }
 }

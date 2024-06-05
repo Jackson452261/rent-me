@@ -1,5 +1,4 @@
- 
-import PropTypes from 'prop-types';
+ import PropTypes from 'prop-types';
 import { Button } from 'antd';
 
 const RButton = ({ type, size, className, style, onClick, shape, icon }) => {

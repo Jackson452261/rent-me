@@ -55,7 +55,6 @@ const AddProduct = ( ) => {
       name: "台南"
     },
    ]
-
      const checkToken = () => {
       const token =getToken()
       if(!token){
@@ -70,9 +69,7 @@ const AddProduct = ( ) => {
      useEffect(() =>{
        checkToken()
      },[])
- 
   const addProduct = () => {
-
     const product = {
       id: Math.ceil(Math.random() * 1000),
       location: location,
@@ -85,12 +82,9 @@ const AddProduct = ( ) => {
     }
     setProducts([...getProducts(), product])
   }
-
    const ClickSubmit = () => {
-
     message.success(t("message.submit_success"))
    }
-
    const deleteSubmit = () =>{
      
    }
@@ -125,7 +119,6 @@ const AddProduct = ( ) => {
          ) )}
         </Select>
     </Form.Item>
- 
     <Form.Item label={<span className="text-2xl">{t('addProduct.location')}</span>}
        name="location"
        rules={[
@@ -196,6 +189,5 @@ const AddProduct = ( ) => {
     </div>
   )
 }
-
 export default AddProduct
 

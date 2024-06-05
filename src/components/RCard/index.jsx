@@ -1,27 +1,23 @@
-import { Card } from 'antd';
+import { Card, Image } from 'antd';
 import { Link } from 'react-router-dom';
-import { useTranslation } from "react-i18next";
 import { EnvironmentOutlined } from '@ant-design/icons';
 import PropTypes from 'prop-types';
  
-const RCard = ({ bordered, hoverable, size, classNames, styles, product }) => {
-  const { t } = useTranslation();
+const RCard = ({ classNames, styles, product, hoverable }) => {
   return (
-    <Card bordered={bordered} hoverable={hoverable} size={size} className={classNames} styles={styles}>
-      <div key={product.id} className='flex gap-10'>
-        <Link to={`/productDetail/${product.id}`} className='bg-slate-100'> 
-          <img src={product.image} alt={product.location}/>
-        </Link>  
-           <div className=''> 
-           <div className='flex'> 
-           <EnvironmentOutlined className="text-4xl"/>
-        <h2 className="text-2xl text-color-red">{t("Card.location")} {product.location}</h2>
-        </div>
-        <p className="text-blue-600 text-2xl"> {product.description}</p>
-        <p className="text-blue-600 text-2xl">{t("Card.type")}{product.type}</p>
-        <p className=" bg-red-300 w-max p-4 text-2xl border rounded rounded-3xl">{t("Card.price")}{product.price}{t("Card.month")}</p>
-           </div>
-      </div>
+    <Card className={classNames} styles={styles}  hoverable={hoverable}>
+  <div key={product.id}>
+  <div className='container mx-auto mb-4'>
+    <Link to={`/productDetail/${product.id}`}> 
+      <Image height={300} style={{ objectFit:"cover", width:"500px" }}  alt="example" src={product.image} />
+    </Link>  
+    <div className="whitespace-nowrap text-ellipsis overflow-hidden">
+      <EnvironmentOutlined className="text-2xl"/>
+      <h2 className='text-2xl'>{product.location}</h2>
+      <span className='text-2xl'>{product.description}</span>
+    </div>
+  </div>
+</div>
     </Card>
   );
 };

@@ -1,8 +1,12 @@
 {
     "login": "login",
     "logout": "logout",
+    "cancel_button": "Cancel",
+    "search_button": "Search",
     "addProducts": "Add rooms",
     "favorite": "favorite",
+    "favorite_text": "Collect",
+    "furniture": "Furniture and equipment",
     "input_placeholder": "Please Input",
     "login_submit": "Submit",
     "login_remember": "Remember",
@@ -66,6 +70,23 @@
       "detail_location": "Location",
       "popup_location": "Location:",
       "delete": "Delete"
+     },
+     "footer":{
+      "footer_taichung": "Taichung",
+      "footer_Taipei": "Taipei",
+      "footer_Tainan": "Tainan",
+      "footer_kaohsiung": "kaohsiung",
+      "footer_location": "Location",
+      "building_type": "building type",
+      "elevator_building": "Elevator building",
+      "residential_building": "Apartment",
+      "villa": "Villa",
+      "house": "House",
+      "about_us": "About US",
+      "city_introduction": "location Attraction",
+      "house_introduction": "House Feature",
+      "favorite_page": "Favorite Page",
+      "news_page": "News Page"
      }
     
 }

@@ -3,33 +3,103 @@
         "id":1,
         "location": "台北",
         "image":  "https://a0.muscache.com/im/pictures/miso/Hosting-1015879296984047476/original/0185a38f-677e-4c76-9f2a-bc91e1bd406d.jpeg?im_w=1200",
+        "title": "台北一號房",
         "type":  "住宅大樓",
         "description": "2 間臥室3 張床1 間衛浴，位於非常市中心的地點,距離捷運站很近,這裡是美食天堂,寧夏夜市就在旁邊。房間乾淨整潔、淋浴水量充足、熱水充足,有簡單的廚具可以使用。床很舒適、棉被很保暖,沙發很大可以睡。冰箱很大可以放很多東西,有netflix和YouTube可以看都免費",
         "price": "5000",
-        "detailImages": [
+        "images": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-1015879296984047476/original/0185a38f-677e-4c76-9f2a-bc91e1bd406d.jpeg?im_w=1200",
         "https://a0.muscache.com/im/pictures/miso/Hosting-1015879296984047476/original/70237d4f-6de5-435d-a1e4-3a21938510e4.jpeg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-1015879296984047476/original/694f96bc-9429-4208-b8ec-a19666292944.jpeg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-1015879296984047476/original/0b3dbc5a-32e4-43c9-90e6-e89d54bca48d.jpeg?im_w=720"
                          ],
         "latitude": 25.033964,
-        "longitude": 121.564468 
+        "longitude": 121.564468,
+        "furniture": [
+            {
+            "title": "附雙人床",
+                "subTitle": ""
+            },
+            {
+            "title": "提供Wifi",
+            "subTitle": ""
+            },
+            {
+            "title": "有電梯",
+            "subTitle": ""
+            },
+            {
+            "title": "附40吋液晶電視",
+            "subTitle": ""
+            },
+            {
+            "title": "附全新冰箱",
+            "subTitle": ""
+            },
+            {
+            "title": "附寬敞沙發",
+            "subTitle": ""
+            },
+            {
+            "title": "沒有洗衣機",
+            "subTitle": ""
+            },
+            {
+            "title": "不可開火",
+            "subTitle": ""
+            }
+        ]
     },
     {
         "id":2,
         "location": "台中",
+        "title": "台中一號房",
         "image": "https://a0.muscache.com/im/pictures/b8668390-402f-4d37-9e8d-a9199b2ac800.jpg?im_w=1200",
         "type":  "電梯公寓",
         "description": "1 間臥室2 張床1 間衛浴，我們的房源位於台中最優質的勤美商圈，極便利交通、方便的生活機能",
         "price": "6000",
-        "detailImages": [
+        "images": [
             "https://a0.muscache.com/im/pictures/b8668390-402f-4d37-9e8d-a9199b2ac800.jpg?im_w=1200",
             "https://a0.muscache.com/im/pictures/e959eadc-139f-4111-9ba1-1ba85d5a93e9.jpg?im_w=720",
             "https://a0.muscache.com/im/pictures/0a7f236a-653c-4be5-829a-c0a8fc3e37a3.jpg?im_w=720",
             "https://a0.muscache.com/im/pictures/91d305a3-d680-441f-93cc-f19f76099ccc.jpg?im_w=720"
                         ],
     "latitude": 24.152075,
-    "longitude": 120.663601              
+    "longitude": 120.663601,
+    "furniture": [
+        {
+        "title":"附全新雙人床",
+            "subTitle": ""
+        },
+        {
+        "title":"附高速Wifi",
+        "subTitle": ""
+        },
+        {
+        "title": "有電梯",
+        "subTitle": ""
+        },
+        {
+        "title": "附42吋液晶電視",
+        "subTitle": ""
+        },
+        {
+        "title": "沒有冰箱",
+        "subTitle": ""
+        },
+        {
+        "title": "附寬敞沙發",
+        "subTitle": ""
+        },
+        {
+        "title": "沒有洗衣機",
+        "subTitle": ""
+        },
+        {
+        "title": "不可開火",
+        "subTitle": ""
+        }
+    ]              
 
         
     },
@@ -37,17 +107,52 @@
         "id":3,
         "location": "宜蘭",
         "image": "https://a0.muscache.com/im/pictures/hosting/Hosting-52557612/original/3cfa514d-0803-4179-92e0-31602b09ccbd.jpeg?im_w=1200",
+        "title": "宜蘭一號房",
         "type": "別墅",
         "description": "鄰近冬山河梅花湖羅東夜市，特色:獨棟電梯各層樓、KTV歡唱、可使用廚房、戶外烤肉桌",
         "price": "7000",
-        "detailImages": [
+        "images": [
             "https://a0.muscache.com/im/pictures/hosting/Hosting-52557612/original/3cfa514d-0803-4179-92e0-31602b09ccbd.jpeg?im_w=1200",
             "https://a0.muscache.com/im/pictures/5a5937a5-74a7-4a3e-a4a6-85d598ee0c87.jpg?im_w=720",
             "https://a0.muscache.com/im/pictures/68d06bf1-6e54-4b84-a7e4-84d6f3f75515.jpg?im_w=720",
             "https://a0.muscache.com/im/pictures/30e76392-e265-43b0-ac51-7ffed5ec8e92.jpg?im_w=720"
                              ],
         "latitude": 24.859675505735463, 
-        "longitude":121.82311392958344
+        "longitude":121.82311392958344,
+        "furniture": [
+            {
+            "title": "附全新雙人床",
+                "subTitle": ""
+            },
+            {
+            "title": "附高速Wifi",
+            "subTitle": ""
+            },
+            {
+            "title": "有電梯",
+            "subTitle": ""
+            },
+            {
+            "title": "沒有電視",
+            "subTitle": ""
+            },
+            {
+            "title": "有冰箱",
+            "subTitle": ""
+            },
+            {
+            "title": "附兩張沙發",
+            "subTitle": ""
+            },
+            {
+            "title": "沒有洗衣機",
+            "subTitle": ""
+            },
+            {
+            "title": "有廚房可以開火",
+            "subTitle": ""
+            }
+        ]
       
     } 
 ]

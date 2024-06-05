@@ -1,7 +1,6 @@
 import  Mock  from "mockjs";
-import products from "./Home/products.json"
-import banner from "./Home/banner.json"
-
+import products from "@/mock//Home/products.json"
+import banner from "@/mock/Home/banner.json"
 
 Mock.mock('/mock/products', {
     code: 200,
