@@ -1,4 +1,4 @@
-import { HeatMapOutlined,   SearchOutlined, GlobalOutlined, DownOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
+import { HeatMapOutlined,   SearchOutlined, GlobalOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
 import RButton from '@/components/RButton';
 import {  useNavigate } from 'react-router-dom';
 import RInput from '@/components/RInput/input';
@@ -6,24 +6,24 @@ import RDropdown from '@/components/RDropdown';
 import i18n from '@/i18n'
 import { Button } from 'antd';
 import { useTranslation } from "react-i18next";
+import { setLanguage } from '@/utils/localStorage';
 
-const RNavbar = ( { logout, isLogin }) => {
+const RNavbar = ( { logout, isLogin, onChange, searchValue}) => {
   const { t } = useTranslation()
    const navigate = useNavigate()
-  const changeEng = () => {
-    i18n.changeLanguage("en_US");
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang)
+    setLanguage(lang)
   }
-  const changeCN = () => {
-    i18n.changeLanguage("zh_TW");
-  }
+    
 const translateItems = [
   {
     key: 'en_US',
-    label: <button  onClick={changeEng}>{t('change_English')}</button>
+    label: <button  onClick={() => changeLanguage('en_US')}>English</button>
   },
   {
     key: 'zh_TW',
-    label: <button  onClick={changeCN}>{t('change_Chinese')}</button>
+    label: <button  onClick={() => changeLanguage('zh_TW')}>繁體中文</button>
   }
 ]
 const userItems = [
@@ -51,13 +51,15 @@ const userItems = [
     </RButton>
     <RInput
         className='w-96 rounded-[32px] pl-5'
-        suffix={<RButton shape='circle' size='large' icon={<SearchOutlined />} />}
-        placeholder={t('input_placeholder')}/>
+        suffix={<SearchOutlined />}
+        placeholder={t('input_placeholder')}
+        value={searchValue}
+        onChange={onChange}
+        />
     <div className='flex items-center'>
     <RDropdown className='mr-5' items={translateItems}>
       <div className='borderborder-slate-300 rounded-full px-4 py-4'> 
-      <GlobalOutlined style={{ fontSize: 20 }}/>
-      <DownOutlined />
+      <GlobalOutlined style={{ fontSize: 25 }}/>
       </div>
     </RDropdown>
     <RDropdown items={userItems}>

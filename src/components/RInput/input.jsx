@@ -17,7 +17,7 @@ RInput.propTypes = {
   className: PropTypes.string,
   prefix: PropTypes.node,
   suffix: PropTypes.node,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func
 };
 
 export default RInput;

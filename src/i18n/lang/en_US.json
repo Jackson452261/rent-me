@@ -18,6 +18,7 @@
     "input_password": "Please input password",
     "NotFoundPage": "Sorry, we couldn't find this Page",
     "backtoHome": "Back to Home Page",
+    "Chinese_language": "traditional Chinese",
     "Card":
     { 
     "price": "Price",
@@ -36,7 +37,9 @@
         "location_message": "Please select location",
         "phone_message": "Please input cellphone Number",
         "email_message": "Please input Email",
-        "please_login": "Please login"
+        "please_login": "Please login",
+        "price_message": "Please input rent price",
+        "upload_image": "Please upload Images"
      },
      "addProduct":{
         "addRoom": "Add Room",
@@ -59,7 +62,8 @@
         "price_input": "Please input Price",
         "email_input": "Please input Email",
         "phone_input": "Please input cellphone number",
-        "descripiton_input": "Please input Description"
+        "descripiton_input": "Please input Description",
+        "uploadImage": "Please upload Images"
      },
      "details_page":{
       "detail_type": "type:",

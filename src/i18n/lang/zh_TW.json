@@ -18,6 +18,7 @@
     "input_password": "請輸入密碼",
     "NotFoundPage": "對不起，找不到此分頁",
     "backtoHome": "回到首頁",
+    "Chinese_language": "繁體中文",
     "Card":{ 
     "price": "租金",
     "location": "位置:",
@@ -35,7 +36,9 @@
         "location_message": "請選擇城市",
         "phone_message": "請輸入手機號碼",
         "email_message": "請輸入信箱",
-        "please_login": "請登入"
+        "please_login": "請登入",
+        "price_message": "請輸入租金",
+        "upload_image": "請上傳圖片"
      },
      "addProduct":{
       "addRoom": "新增房源",
@@ -63,7 +66,8 @@
       "price_input": "請輸入租金",
       "email_input": "請輸入Email",
       "phone_input": "請輸入手機號碼",
-      "descripiton_input": "請輸入描述"
+      "descripiton_input": "請輸入描述",
+      "uploadImage": "請上傳圖片"
    },
    "details_page":{
       "detail_type": "類型:",

@@ -65,6 +65,9 @@ if(getToken()){
    <Form
     form={form}
     className='pt-40 h-[300px] px-20'
+    initialValues={{
+      remember: true,
+    }}
     labelCol={{span: 8,}}
     wrapperCol={{span: 16,}}
     onFinish={submit}>

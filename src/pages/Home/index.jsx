@@ -2,10 +2,8 @@ import { useEffect, useState } from "react"
 import Banner from '@/components/Banner/index'
 import RoomCard from "@/components/RoomCard"
 import { homeApi } from "@/api/module/home"
- import {setProducts} from "@/utils/localStorage"
- import productsData from "@/mock/Home/products.json"
- const Home = () => {  
  
+ const Home = () => {  
   const [bannerData, setBannerData] = useState([])
   const [products, setProduct] = useState([])
 
@@ -18,7 +16,6 @@ import { homeApi } from "@/api/module/home"
    setProduct(data)
  }
  useEffect(() => {
-  setProducts(productsData)
    getBannerData()
    getProductsData()
  },[])
