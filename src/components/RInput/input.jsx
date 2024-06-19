@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Input } from 'antd';
 
 const RInput = ({ placeholder, className, prefix, suffix, onChange }) => {
@@ -11,13 +10,6 @@ const RInput = ({ placeholder, className, prefix, suffix, onChange }) => {
       onChange={onChange}
     />
   );
-};
-RInput.propTypes = {
-  placeholder: PropTypes.string,
-  className: PropTypes.string,
-  prefix: PropTypes.node,
-  suffix: PropTypes.node,
-  onChange: PropTypes.func
 };
 
 export default RInput;

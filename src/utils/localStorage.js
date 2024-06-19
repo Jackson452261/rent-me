@@ -39,6 +39,14 @@ export const getProducts = () => {
   return  JSON.parse(localStorage.getItem("products")) || []
 }
 
+export const setFavorites = (favorites) => {
+     localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+   
+export const getFavorites = () => {
+ return JSON.parse(localStorage.getItem('favorites')) || [];
+}
+
 export const setLanguage = (lang) => {
      localStorage.setItem('My-lang', lang)
 }
@@ -47,4 +55,6 @@ export const getLanguage = () =>{
      return localStorage.getItem('My-lang' || '')
 }
 
+
+ 
  

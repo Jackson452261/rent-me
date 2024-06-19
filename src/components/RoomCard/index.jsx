@@ -1,9 +1,8 @@
- 
-import RCard from '../RCard';
+ import RCard from '../RCard';
 
 const RoomCard = ({ product }) => {
   return (
-    <RCard product={product} hoverable={true}></RCard>
+    <RCard product={product} hoverable={true} /> 
   )
 }
 

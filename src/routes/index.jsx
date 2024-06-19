@@ -1,7 +1,6 @@
 import { useRoutes } from "react-router-dom";
-import {Home, ProductDetail,BannerDetail, NotFound, AddProduct, Login, Favorite} from "@/pages"
+import {Home, ProductDetail,BannerDetail, NotFound, AddProduct, Login, Favorite, ProductList} from "@/pages"
  
-
 export const SetRoutes = () =>
     
     {
@@ -29,6 +28,10 @@ export const SetRoutes = () =>
    {
       path: '/favorite',
       element: <Favorite />
+   },
+   {
+      path: '/productList',
+      element: <ProductList />
    },
    {
         path: '/*',

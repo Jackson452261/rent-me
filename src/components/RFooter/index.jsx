@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
   const { t } = useTranslation()
   return (
     <div>
-  <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 pt-12 container mx-auto pt-44">
+  <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 pt-12 container mx-auto">
   <div>
     <h3 className="font-bold">{t('footer.footer_location')}</h3>
   <ul className="mt-4 space-y-4">

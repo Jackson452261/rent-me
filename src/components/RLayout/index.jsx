@@ -1,4 +1,4 @@
- import RFooter from '../RFooter'
+import RFooter from '../RFooter'
 import RNavbar from '../RNavbar/index'
 
 const RLayout = ( { children, logout, isLogin }) => {

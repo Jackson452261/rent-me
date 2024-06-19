@@ -38,7 +38,8 @@
         "email_message": "請輸入信箱",
         "please_login": "請登入",
         "price_message": "請輸入租金",
-        "upload_image": "請上傳圖片"
+        "upload_image": "請上傳圖片",
+        "necessary_information": "請輸入所有必填欄位資訊"
      },
      "addProduct":{
       "addRoom": "新增房源",

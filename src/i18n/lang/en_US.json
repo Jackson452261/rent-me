@@ -39,7 +39,8 @@
         "email_message": "Please input Email",
         "please_login": "Please login",
         "price_message": "Please input rent price",
-        "upload_image": "Please upload Images"
+        "upload_image": "Please upload Images",
+        "necessary_information": "Please input necessary information"
      },
      "addProduct":{
         "addRoom": "Add Room",

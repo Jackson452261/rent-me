@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom";
 import { getToken } from "@/utils/localStorage";
  
+ 
 const AddProduct = ( ) => {
   const navigate = useNavigate()
   const [form] = Form.useForm()
@@ -38,7 +39,7 @@ const AddProduct = ( ) => {
       name: "透天厝"
     },
    ]
-
+ 
    const cities = [
     {
       value: "台中",
@@ -67,20 +68,13 @@ const AddProduct = ( ) => {
      useEffect(() =>{
        checkToken()
      },[])
-  const addProduct = () => {
-    const product = {
-      id: Math.ceil(Math.random() * 1000),
-      location: location,
-      image: '',
-      type: type,
-      description: description,
-      price: price + "元/月",
-      phone:  contactNumber,
-      Email: contactEmail
-    }
-    setProducts([...getProducts(), product])
-  }
+   
    const Submit = () => {
+    if (!type || !location || !price || !contactNumber || !contactEmail.trim()) {
+      message.warning(t('message.necessary_information'));
+      return
+    }
+    else{
     const form = {
       id: Math.floor(Math.random() * 1000),
       type,
@@ -93,10 +87,15 @@ const AddProduct = ( ) => {
     }
     setProducts([...getProducts(), form])
     message.success(t("message.submit_success"))
+    navigate("/")
    }
+  }
   
-   const handleChange = (e) => {
-    console.log(e)
+  const handleChange = (data) => {
+    const fileList = data.fileList.map(file => ({...file,
+      url: URL.createObjectURL(file.originFileObj),
+    }));
+    setUploadImages(fileList.map(file => file.url));
   };
    const rules = {
     type: [{required: true,message: t('message.BuildinType_message'),}],
@@ -119,7 +118,7 @@ const AddProduct = ( ) => {
     form={form}
     className='py-20 flex justify-center flex-col mx-auto'
     style={{  maxWidth: "700px" }}
-    onFinish={addProduct}>
+    >
   <Form.Item  
     label={t('addProduct.RoomType')} 
     className="text-lg"
@@ -151,7 +150,7 @@ const AddProduct = ( ) => {
 <Option key={city.value} value={city.value} style={{ fontSize: "16px"}}>{city.name}</Option>))}
 </Select>
   </Form.Item>
-    <Form.Item name={['user', 'introduction']}
+    <Form.Item name={['description', 'introduction']}
      label={t('addProduct.Description')}
      labelCol={{span: 24,}}
      wrapperCol={{span: 24,}}>
@@ -166,15 +165,15 @@ const AddProduct = ( ) => {
    <Input value={price} onChange={(e) => setPrice(e.target.value)} 
    placeholder={t('addProduct.price_input')}/>
    </Form.Item>
-   <Form.Item name="phone" label={t('addProduct.phone')}
+   <Form.Item name="contactNumber" label={t('addProduct.phone')}
      rules={rules.phone}
      labelCol={{span: 24,}}
      wrapperCol={{span: 24,}}>
-  <Input value={contactNumber}  
+  <Input value={contactNumber}   
   placeholder={t('addProduct.phone_input')}
   onChange={(e) => setContactNumber(e.target.value)}/>
    </Form.Item>
-   <Form.Item name="email" label={t('addProduct.email')}
+   <Form.Item name="contactEmail" label={t('addProduct.email')}
     rules={rules.email}
     labelCol={{span: 24,}}
      wrapperCol={{span: 24,}}>

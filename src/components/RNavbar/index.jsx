@@ -9,11 +9,12 @@ import { useTranslation } from "react-i18next";
 import { setLanguage } from '@/utils/localStorage';
 
 const RNavbar = ( { logout, isLogin, onChange, searchValue}) => {
+ 
   const { t } = useTranslation()
-   const navigate = useNavigate()
+  const navigate = useNavigate()
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang)
-    setLanguage(lang)
+  i18n.changeLanguage(lang)
+  setLanguage(lang)
   }
     
 const translateItems = [
@@ -50,12 +51,11 @@ const userItems = [
     <RButton className='flex items-center' type='link' onClick={() => navigate('/')} icon={<HeatMapOutlined style={{ fontSize: 28 }}/>}>
     </RButton>
     <RInput
-        className='w-96 rounded-[32px] pl-5'
-        suffix={<SearchOutlined />}
-        placeholder={t('input_placeholder')}
-        value={searchValue}
-        onChange={onChange}
-        />
+      className='w-96 rounded-[32px] pl-5'
+      suffix={<SearchOutlined />}
+      placeholder={t('input_placeholder')}
+      value={searchValue}
+      onChange={onChange}/>
     <div className='flex items-center'>
     <RDropdown className='mr-5' items={translateItems}>
       <div className='borderborder-slate-300 rounded-full px-4 py-4'> 
