@@ -13,7 +13,7 @@ import { CgSmartHomeWashMachine } from "react-icons/cg";
 import { useTranslation } from "react-i18next"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
- 
+
 const BannerDetail = () => {
   const { t } = useTranslation()
   const [bannerdata, setBannerData] = useState([])

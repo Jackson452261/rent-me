@@ -1,57 +1,76 @@
-import { useEffect, useState } from "react"
-import Banner from '@/components/Banner/index'
-import RoomCard from "@/components/RoomCard"
-import { homeApi } from "@/api/module/home"
-import { getProducts } from "@/utils/localStorage"
-import { Image } from "antd"
+import { useEffect, useState } from "react";
+import Banner from '@/components/Banner/index';
+import RCard from "@/components/RCard";
+import RInput from "@/components/RInput";
+import { message } from 'antd';
+import { homeApi } from "@/api/module/home";
+import { getProducts, setProducts } from "@/utils/localStorage";
+import favoriteProduct from '@/store/favoriteProduct';
+import { useTranslation } from "react-i18next"
  
-  const Home = () => {  
-  const [bannerData, setBannerData] = useState([])
-  const [products, setProduct] = useState([])
-  const [Newproducts, setNewproducts] = useState([]);
+const Home = () => {
+  const [bannerData, setBannerData] = useState([]);
+  const [products, setProduct] = useState(getProducts());
+  const [searchValue, setSearchValue] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const { favorites } = favoriteProduct();
+  const { t } = useTranslation()
+  const getBannerData = async () => {
+  const data = await homeApi.getBanner();
+  setBannerData(data);
+  };
 
- const getBannerData = async() => {
- const data = await homeApi.getBanner()
- setBannerData(data)
- }
- const getProductsData = async() => {
-   const data = await homeApi.getProducts()
-   setProduct(data)
- }
- const getNewProducts = () => {
-   const newProducts = getProducts()
-   setNewproducts(newProducts) 
- }
- useEffect(() => {
-   getBannerData()
-   getProductsData()
-   getNewProducts()
- },[])
-   return (
-     <div>
-       <Banner bannerDatas={bannerData}></Banner>
-       <div className="container mx-auto mt-4"> 
-       <div className='flex justify-between flex-wrap'>
-     {products.map(product => (
-      <div key={product.id} className="mb-4 w-1/4 px-2 ">
-      <RoomCard key={product.id} product={product} /> 
+  const getProductsData = async () => {
+    const data = await homeApi.getProducts();
+    setProduct(data);
+    setProducts(data);  
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  const handleSearchClick = () => {
+  const inputValue = searchValue.trim()
+  if(!inputValue){
+      message.warning(t('message.input_searchValue'));
+      getProductsData()
+      return
+  }
+    const filtered = products.filter(product =>
+    product.title.includes(inputValue)
+  );
+    setFilteredProducts(filtered);
+  };
+
+  useEffect(() => {
+    getBannerData();
+    {(!products.length) ? getProductsData() : setFilteredProducts(products)}
+  },[]);
+
+  return (
+    <div>
+      <Banner bannerDatas={bannerData} />
+      <div className='bg-slate-100 flex items-center justify-between h-20 px-10'>
+        <RInput searchValue={searchValue} handleSearchChange={handleSearchChange} handleSearchClick={handleSearchClick}/>
       </div>
-     ))}
-     {Newproducts.map(newproduct => (
-      <div key={newproduct.id} className="flex flex-col">
-         {newproduct.images.map(image => (
-      <Image key={image.id} src={image} width="500px"/>
-    ))}
-        <h2>房屋類型:{newproduct.type}</h2>
-        <h2>位置:{newproduct.location}</h2>
-        <h2>租金:{newproduct.price}</h2>
-        <h2>連絡電話:{newproduct.contactNumber}</h2>
-        <h2>信箱:{newproduct.contactEmail}</h2>    
+      <div className="container mx-auto mt-4">
+        <div className='flex justify-between flex-wrap'>
+          {filteredProducts.map(product => (
+            <div key={product.id} className="mb-4 w-1/4 px-2">
+              <RCard
+                key={product.id}
+                product={product}
+                favorites={favorites}
+                onFavoriteClick={() => handleFavoriteClick(product.id)}
+                hoverable
+              />
+            </div>
+          ))}
+        </div>
       </div>
-     ))}
-     </div>
-     </div>
-     </div>
-   )
- }
- export default Home
+    </div>
+  );
+};
+
+export default Home;

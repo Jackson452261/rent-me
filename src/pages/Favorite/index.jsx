@@ -4,7 +4,7 @@ import {  CloseCircleOutlined  } from '@ant-design/icons';
  
 const Favorite = () => {
   const { favorites, removeFavorite} = favoriteProduct();
-  
+
   return (
     <div className="mx-auto container">
       <h2 className='text-2xl'>我的收藏</h2>

@@ -7,7 +7,7 @@
     "favorite": "收藏頁面",
     "favorite_text": "收藏",
     "furniture": "家具與設備",
-    "input_placeholder": "請輸入",
+    "input_placeholder": "搜尋",
     "login_submit": "提交",
     "login_remember": "記住我",
     "login_username": "使用者名稱",
@@ -39,7 +39,8 @@
         "please_login": "請登入",
         "price_message": "請輸入租金",
         "upload_image": "請上傳圖片",
-        "necessary_information": "請輸入所有必填欄位資訊"
+        "necessary_information": "請輸入所有必填欄位資訊",
+        "input_searchValue": "請輸入位置"
      },
      "addProduct":{
       "addRoom": "新增房源",

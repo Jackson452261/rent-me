@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom";
 import { getToken } from "@/utils/localStorage";
  
- 
 const AddProduct = ( ) => {
   const navigate = useNavigate()
   const [form] = Form.useForm()
@@ -92,10 +91,7 @@ const AddProduct = ( ) => {
   }
   
   const handleChange = (data) => {
-    const fileList = data.fileList.map(file => ({...file,
-      url: URL.createObjectURL(file.originFileObj),
-    }));
-    setUploadImages(fileList.map(file => file.url));
+     console.log(data)
   };
    const rules = {
     type: [{required: true,message: t('message.BuildinType_message'),}],
