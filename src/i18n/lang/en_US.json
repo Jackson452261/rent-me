@@ -19,6 +19,7 @@
     "NotFoundPage": "Sorry, we couldn't find this Page",
     "backtoHome": "Back to Home Page",
     "Chinese_language": "traditional Chinese",
+    "Allrooms": "All rooms",
     "Card":
     { 
     "price": "Price",
@@ -41,7 +42,9 @@
         "price_message": "Please input rent price",
         "upload_image": "Please upload Images",
         "necessary_information": "Please input necessary information",
-        "input_searchValue": "Please input Location"
+        "input_searchValue": "Please input Location",
+        "delete_success": "Delete successfully",
+         "Edit_success": "Edit successfully"
      },
      "addProduct":{
         "addRoom": "Add Room",
@@ -66,6 +69,12 @@
         "phone_input": "Please input cellphone number",
         "descripiton_input": "Please input Description",
         "uploadImage": "Please upload Images"
+     },
+     "EditProduct":{
+      "Edit_Room": "Edit Room",
+      "submit": "Confirm to Edit",
+       "submit_delete": "Delete"
+       
      },
      "details_page":{
       "detail_type": "type:",

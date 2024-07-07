@@ -19,6 +19,7 @@
     "NotFoundPage": "對不起，找不到此分頁",
     "backtoHome": "回到首頁",
     "Chinese_language": "繁體中文",
+    "Allrooms": "全部房源",
     "Card":{ 
     "price": "租金",
     "location": "位置:",
@@ -40,7 +41,9 @@
         "price_message": "請輸入租金",
         "upload_image": "請上傳圖片",
         "necessary_information": "請輸入所有必填欄位資訊",
-        "input_searchValue": "請輸入位置"
+        "input_searchValue": "請輸入位置",
+        "delete_success": "刪除成功",
+        "Edit_success": "修改成功"
      },
      "addProduct":{
       "addRoom": "新增房源",
@@ -71,6 +74,11 @@
       "descripiton_input": "請輸入描述",
       "uploadImage": "請上傳圖片"
    },
+   "EditProduct":{
+      "Edit_Room": "編輯房源",
+       "submit": "確認修改",
+       "submit_delete": "刪除"
+     },
    "details_page":{
       "detail_type": "類型:",
       "detail_price": "租金:",

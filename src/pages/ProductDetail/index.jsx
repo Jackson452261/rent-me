@@ -17,6 +17,7 @@ import 'leaflet/dist/leaflet.css';
 const ProductDetail = () => {
   const { t } = useTranslation()
   const [products, setProducts] = useState([])
+  
   const getProductData = async() => {
     const data = await homeApi.getProducts()
     setProducts(data)
