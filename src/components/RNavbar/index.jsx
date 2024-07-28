@@ -1,4 +1,4 @@
-import { HeatMapOutlined,    GlobalOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
+import { HeatMapOutlined,    GlobalOutlined, UserOutlined } from '@ant-design/icons';
 import RButton from '@/components/RButton';
 import {  useNavigate } from 'react-router-dom';
 import RDropdown from '@/components/RDropdown';
@@ -55,9 +55,8 @@ const userItems = [
       </div>
     </RDropdown>
     <RDropdown items={userItems}>
-      <div className='border border-slate-300 rounded-full px-8 py-4 ml-4'> 
-      <MenuOutlined style={{ fontSize: 20 }}/>
-      <UserOutlined style={{ fontSize: 20 }}/>
+      <div className='px-8 py-4 ml-4'> 
+      <UserOutlined  className='text-3xl'/>
     </div>
     </RDropdown>
       </div>

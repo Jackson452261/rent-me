@@ -5,7 +5,6 @@ import { Image, List } from "antd";
 import { IoBedOutline } from "react-icons/io5";
 import { BsFire } from "react-icons/bs";
 import { FaWifi } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa6";
 import { LuSofa,LuRefrigerator  } from "react-icons/lu";
 import { PiTelevision } from "react-icons/pi";
 import { MdOutlineElevator } from "react-icons/md";
@@ -88,10 +87,6 @@ const BannerDetail = () => {
   <h2 className="text-xl">{banner.title}</h2>
   <span className="text-zinc-500">{banner.type}</span>
   <h2 className="bg-red-300 w-max p-4 text-2xl border rounded rounded-3xl">{t("details_page.detail_price")}{banner.price}{t("details_page.detail_month")}</h2>  
-  <div className="flex items-center pb-16">
-      <FaRegHeart className="text-4xl cursor-pointer" />
-      <h2 className="ml-2 text-4xl">{t('favorite')}</h2>
-    </div>
   </div>
 </div>
 <div className="w-2/6"> 

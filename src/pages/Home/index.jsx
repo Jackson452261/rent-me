@@ -8,7 +8,7 @@ import { getProducts, setProducts } from "@/utils/localStorage";
 import favoriteProduct from '@/store/favoriteProduct';
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom";
-import CardCarousel from "../../components/CardCarousel";
+import CardCarousel from "@/components/CardCarousel";
  
 const Home = () => {
   const [bannerData, setBannerData] = useState([]);
@@ -72,12 +72,14 @@ const Home = () => {
    </div>
       ))}
         </div>
+        {(filteredProducts.length === products.length &&(
         <CardCarousel 
           products={filteredProducts} 
           favorites={favorites} 
           onFavoriteClick={() => handleFavoriteClick(product.id)}
           navigate={navigate} 
-        />
+        />))
+      }
       </div>
     </div>
   );

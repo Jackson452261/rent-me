@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { homeApi } from "@/api/module/home";
 import { Image, List   } from "antd";
 import { IoBedOutline,  } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa6";
 import { BsFire } from "react-icons/bs";
 import { FaWifi } from "react-icons/fa6";
 import { LuSofa,LuRefrigerator  } from "react-icons/lu";
@@ -88,10 +87,6 @@ const ProductDetail = () => {
   <h2 className="text-xl">{product.title}</h2>
   <span className="text-zinc-500">{product.type}</span>
   <p className="bg-red-300 w-max p-4 text-2xl border rounded rounded-3xl">{t("Card.price")}{product.price}{t("Card.month")}</p>
-  <div className="flex items-center pb-16">
-      <FaRegHeart className="text-4xl cursor-pointer" />
-      <h2 className="ml-2 text-4xl">{t('favorite')}</h2>
-    </div>
   </div>
 </div>
 <div className="w-2/6"> 
