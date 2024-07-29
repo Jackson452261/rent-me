@@ -4,7 +4,7 @@ import RCard from '@/components/RCard';
 import { Navigation, Pagination } from 'swiper/modules';
 import { useTranslation } from "react-i18next"
  
-const ProductSwiper = ({ products, favorites, handleFavoriteClick, navigate }) => {
+const CardCarousel = ({ products, favorites, handleFavoriteClick, navigate }) => {
   const { t } = useTranslation()
   return (
 <div className="relative">
@@ -36,4 +36,4 @@ const ProductSwiper = ({ products, favorites, handleFavoriteClick, navigate }) =
   );
 };
 
-export default ProductSwiper;
+export default CardCarousel;
