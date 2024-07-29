@@ -53,7 +53,7 @@ const Home = () => {
     }
   },[]);
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Banner bannerDatas={bannerData} />
       <div className='bg-slate-100 flex items-center justify-between h-20 px-10'>
         <RInput searchValue={searchValue} handleSearchChange={handleSearchChange} handleSearchClick={handleSearchClick}/>
