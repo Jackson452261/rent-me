@@ -1,10 +1,25 @@
-import { List, Image } from 'antd';
+import { List, Image, message } from 'antd';
 import favoriteProduct from '@/store/favoriteProduct';
 import {  CloseCircleOutlined  } from '@ant-design/icons';
+import { useEffect } from 'react';
+import { getToken } from "@/utils/localStorage";
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from "react-i18next"
  
 const Favorite = () => {
   const { favorites, removeFavorite} = favoriteProduct();
-
+  const navigate = useNavigate()
+  const { t } = useTranslation()
+  const checkToken = () => {
+    const token = getToken()
+    if(!token){
+        message.warning(t("message.please_login"))
+        navigate("/login")
+    }    
+    }
+    useEffect(() => {
+      checkToken()
+    })
   return (
     <div className="mx-auto container">
       <h2 className='text-2xl'>我的收藏</h2>

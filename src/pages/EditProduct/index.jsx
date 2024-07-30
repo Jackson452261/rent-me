@@ -61,7 +61,7 @@ const EditProduct = ( ) => {
     },
    ]
     const checkToken = () => {
-    const token =getToken()
+    const token = getToken()
     if(!token){
         message.warning(t("message.please_login"))
         navigate("/login")
