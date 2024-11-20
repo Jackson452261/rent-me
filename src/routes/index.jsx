@@ -1,9 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import {Home, ProductDetail,BannerDetail, NotFound, AddProduct, Login, Favorite, EditProduct} from "@/pages"
- 
- 
 export const SetRoutes = () =>
-    
     {
      return useRoutes([
         {

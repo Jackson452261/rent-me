@@ -18,8 +18,8 @@
     "input_password": "請輸入密碼",
     "NotFoundPage": "對不起，找不到此分頁",
     "backtoHome": "回到首頁",
-    "Chinese_language": "繁體中文",
-    "Allrooms": "全部房源",
+    "Chinese_language": "中文",
+    "Allrooms": "房源",
     "Card":{ 
     "price": "租金",
     "location": "位置:",
